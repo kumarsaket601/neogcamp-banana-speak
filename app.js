@@ -1,27 +1,38 @@
-var btnTransalate = document.querySelector("#btn-transalate");
+var btnTranslate = document.querySelector("#btn-translate");
 var log = console.log;
-var text = document.querySelector("#text-input");
-var outputTranslate = document.querySelector("#output"); 
- 
-var serverUrl = "https://api.funtranslations.com/translate/yoda.json";
+var txtInput = document.querySelector("#txt-input");
+var outputDiv = document.querySelector("#output");
 
-function getTranslationUrl(text){
 
-   return serverUrl + "?" + "text" + text
+var serverURL = "https://api.funtranslations.com/translate/yoda.json"
+
+
+function getTranslationURL(input) {
+
+  return serverURL + "?" + "text=" + input;
+}
+
+function errorHandler(error) {
+  log("error occured, error");
+  alert("something wrong with server : try again after few time");
 }
 
 
 
-  function clickHandler(){
+function clickHandler() {
 
 
-   var inputText = txtInput.value;
+  var inputText = txtInput.value;
 
-   fetch(getTranslationUrl(text))
-     .then(response => response.json())
-     .then(json => log(json))
+  fetch(getTranslationURL(inputText))
+    .then(response => response.json())
+    .then(json => {
+       var translatedText = json.contents.translated; 
+       outputDiv.innerText = translatedText;
+    })
+    .catch(errorHandler)
 
-   log("clicked!");
-}
 
-btnTransalate.addEventListener("click" , clickHandler())
+};
+
+btnTranslate.addEventListener("click", clickHandler())
