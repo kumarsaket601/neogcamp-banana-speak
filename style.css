@@ -1,37 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 :root {
-    --primary-color: #edde6c;
-    --dark-gray: #BDBBB0;
-    --off-white: #F1F2EE;
+    --primary-color: #F2C94C;
+    
 
 }
 
 body {
 
-    font-family: 'Montserrat',
-        sans-serif;
+    font-family: 'Kalam',
+        cursive;
 
     margin: 0px;
+    color: black;
 }
 
+
+ /** navigation **/
 .naviagtion{
     background-color: var(--primary-color);
     text-align: center;
+    padding: 0.5rem 0rem;
+    font-size: x-large;
+    
 }
 
 
+
+
+/** textarea **/
 textarea {
-    width: 90vh;
     height: 10vh;
+    width: 90vh;
     display: block;
-    margin: 1rem;
+    margin: 2rem auto;
+    
 }
 
+/** button  **/
+.button{
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+   font-weight: bold;
+   font-size: larger;
+    margin: 1rem auto;
+    display: flex;
+}
+
+/** text **/
+.good{
+    text-align: center;
+    font-size: large;
+    padding: 0rem 1rem;
+    
+}
+
+/** output box **/
 #output {
     border: 1px solid black;
     height: 10vh;
     width: 90vh;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 3.5rem auto;
+    padding: 0rem 0rem; 
+}
+
+/** footer ***/
+.footer-container {
+    background-color: var(--primary-color);
+    padding: 1rem 0.5rem;
+    text-align: center;
+
+}
+
+.footer-container .about {
+    text-align: center;
+    padding: 2rem 0rem;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.footer-container p{
+    display: flexbox;
+    
+   
 }
