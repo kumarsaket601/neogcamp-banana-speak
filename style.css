@@ -43,15 +43,19 @@ textarea {
     background-color: var(--primary-color);
    font-weight: bold;
    font-size: larger;
-    margin: 1rem auto;
+    margin: 5rem 26rem;
     display: flex;
+    border-radius: 0.3rem;
 }
 
 /** text **/
 .good{
     text-align: center;
     font-size: large;
-    padding: 0rem 1rem;
+    padding: 1rem 0rem;
+    margin-right: 28rem;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
     
 }
 
@@ -60,7 +64,7 @@ textarea {
     border: 1px solid black;
     height: 10vh;
     width: 90vh;
-    margin: 3.5rem auto;
+    margin: 2.5rem auto;
     padding: 0rem 0rem; 
 }
 
@@ -79,8 +83,10 @@ textarea {
     font-size: x-large;
 }
 
-.footer-container p{
-    display: flexbox;
+.parag {
+    margin-left: 30rem;
+    margin-right: 30rem;
+    
     
    
 }
