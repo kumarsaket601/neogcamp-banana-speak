@@ -11,7 +11,7 @@ body {
     font-family: 'Kalam',
         cursive;
 
-    margin: 0px;
+    margin:auto;
     color: black;
 }
 
@@ -87,6 +87,6 @@ textarea {
     margin-left: 30rem;
     margin-right: 30rem;
     
-    
+    margin: auto;
    
 }
