@@ -11,82 +11,95 @@ body {
     font-family: 'Kalam',
         cursive;
 
-    margin:auto;
+    margin: 1rem 1rem;
     color: black;
 }
 
-
- /** navigation **/
-.naviagtion{
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 0.5rem 0rem;
-    font-size: x-large;
-    
-}
 
 
 
 
 /** textarea **/
 textarea {
-    height: 10vh;
-    width: 90vh;
-    display: block;
+
+    border: 1px solid black;
+    height: 20vh;
+    width: 60vh;
+    padding: 1rem 2rem;
     margin: 2rem auto;
     
 }
 
 /** button  **/
 .button{
+
     padding: 1rem 2rem;
     background-color: var(--primary-color);
-   font-weight: bold;
-   font-size: larger;
-    margin: 5rem 26rem;
-    display: flex;
+    font-weight: bold;
+    font-size: larger;
+    margin: auto;
     border-radius: 0.3rem;
 }
 
-/** text **/
-.good{
-    text-align: center;
-    font-size: large;
-    padding: 1rem 0rem;
-    margin-right: 28rem;
-    margin-top: 5rem;
-    margin-bottom: 0rem;
-    
-}
+
 
 /** output box **/
 #output {
     border: 1px solid black;
-    height: 10vh;
-    width: 90vh;
-    margin: 2.5rem auto;
-    padding: 0rem 0rem; 
-}
-
-/** footer ***/
-.footer-container {
-    background-color: var(--primary-color);
-    padding: 1rem 0.5rem;
-    text-align: center;
-
-}
-
-.footer-container .about {
-    text-align: center;
-    padding: 2rem 0rem;
-    font-weight: bold;
-    font-size: x-large;
-}
-
-.parag {
-    margin-left: 30rem;
-    margin-right: 30rem;
+    height: 20vh;
+    width: 60vh;
+    padding: 1rem 2rem;
     
-    margin: auto;
-   
+     
 }
+
+.navigation{
+    
+    background-color: var(--primary-color);
+    
+    padding: 1rem;
+
+}
+
+.container-center{
+
+     margin: 1rem auto;
+     max-width: 150px;
+
+}
+
+.container{
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 0.2rem;
+}
+
+.good{
+     
+    font-weight: bold;
+    padding: 2rem;
+
+}
+
+.footer{
+
+     background-color: var(--primary-color);
+     text-align: center;
+     padding: 1rem 2rem;
+
+}
+
+.footer .new{
+
+    font-weight: bold;
+    font-size: larger;
+    
+}
+
+.footer .parag{
+
+    border: 1rem;
+    margin: 1rem auto;
+}
+
+

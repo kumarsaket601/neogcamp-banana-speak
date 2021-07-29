@@ -22,9 +22,9 @@ function errorHandler(error) {
 function clickHandler() {
 
 
-  var inputText = txtInput.value;
+  var inputNew = txtInput.value;
 
-  fetch(getTranslationURL(inputText))
+  fetch(getTranslationURL(inputNew))
     .then(response => response.json())
     .then(json => {
        var translatedText = json.contents.translated; 
